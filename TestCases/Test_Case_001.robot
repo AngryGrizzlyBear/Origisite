@@ -11,4 +11,5 @@ Robot Framework First Test Case
     Input Text   name:q  Originate.com
     Click Button  xpath://input[@type="submit"]
     # This part works for if you want to automate "I'm feeling Lucky"id=gbqfbb
+    Click Link  xpath://a[@href="https://www.originate.com/"]
     #I'll literally clean this up tomorrow. I just wanted to make sure that I managed to set this up right.
