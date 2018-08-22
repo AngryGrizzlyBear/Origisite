@@ -57,3 +57,69 @@ Third Test: Scroll
     Sleep       2s
     Scroll Page To Location    0   2000
     Sleep       3s
+
+Fourth Test: Check Bottom Links
+    Click Link  xpath://a[text()='Work']
+    Sleep       2s
+    Scroll Page To Location    0   2000
+    Sleep       3s
+    Click Link  xpath://a[text()='Contact']
+    Sleep       2s
+    Go Back
+    Click Link  xpath://a[text()='Work']
+    Sleep       2s
+    Scroll Page To Location    0   2000
+    Sleep       3s
+    Click Link  xpath://a[text()='Join']
+    Sleep       2s
+    Go Back
+    Click Link  xpath://a[text()='Work']
+    Sleep       2s
+    Scroll Page To Location    0   2000
+    Sleep       3s
+    Click Link  xpath://a[text()='Privacy Policy']
+    Sleep       2s
+    Scroll Page To Location    0   2000
+    Sleep       2s
+    Go Back
+#Click Link  xpath://a[@href="https://www.originate.com/"]
+    Click Link  xpath://a[text()='Work']
+    Sleep       2s
+    Scroll Page To Location    0   2000
+    Sleep       3s
+    Click Link   xpath://a[@href="https://github.com/originate"]
+    Sleep       2s
+    Go Back
+    Click Link  xpath://a[text()='Work']
+    Sleep       2s
+    Scroll Page To Location    0   2000
+    Sleep       3s
+    Click Link   xpath://a[@href="https://www.instagram.com/weareoriginate/"]
+    Sleep       2s
+    Go Back
+    Click Link  xpath://a[text()='Work']
+    Sleep       2s
+    Scroll Page To Location    0   2000
+    Sleep       3s
+    Click Link   xpath://a[@href="https://www.facebook.com/originatelabs/"]
+    Sleep       2s
+    Go Back
+    Click Link  xpath://a[text()='Work']
+    Sleep       2s
+    Scroll Page To Location    0   2000
+    Sleep       3s
+    Click Link   xpath://a[@href="https://twitter.com/originatelabs"]
+    Sleep       2s
+    Go Back
+    Click Link  xpath://a[text()='Work']
+    Sleep       2s
+    Scroll Page To Location    0   2000
+    Sleep       3s
+    Click Link   xpath://a[@href="https://www.linkedin.com/company/originate"]
+    Sleep       2s
+    Go Back
+    Click Link  xpath://a[text()='Work']
+    Sleep       2s
+    Scroll Page To Location    0   2000
+    Sleep       3s
+    Page should contain  © 2018 ORIGINATE, INC.
