@@ -19,7 +19,7 @@ First Test: Google Search
     # This part works for if you want to automate "I'm feeling Lucky"id=gbqfbb
     Click Link  xpath://a[@href="https://www.originate.com/"]
 
-Second Test: Check Top Links
+Second Test: Check Header Links
     Click Link  xpath://a[text()='Work']
     Sleep       2s
     Click Link  xpath://a[text()='Services']
@@ -58,7 +58,7 @@ Third Test: Scroll
     Scroll Page To Location    0   2000
     Sleep       3s
 
-Fourth Test: Check Bottom Links
+Fourth Test: Check Footer Links
     Click Link  xpath://a[text()='Work']
     Sleep       2s
     Scroll Page To Location    0   2000
@@ -82,7 +82,6 @@ Fourth Test: Check Bottom Links
     Scroll Page To Location    0   2000
     Sleep       2s
     Go Back
-#Click Link  xpath://a[@href="https://www.originate.com/"]
     Click Link  xpath://a[text()='Work']
     Sleep       2s
     Scroll Page To Location    0   2000
@@ -123,3 +122,15 @@ Fourth Test: Check Bottom Links
     Scroll Page To Location    0   2000
     Sleep       3s
     Page should contain  © 2018 ORIGINATE, INC.
+
+# This is currently being commented out due to the nature of how the Originate Website works.
+# The Website does not use <id>'s, which is a problem. This complicates being able to automate input textfields
+# and selecting text fields. Below is a sample of what I tried to do.
+#   Test: Input Field Test
+#   Click Link  xpath://a[text()='Services']
+#   Sleep       2s
+#   Scroll Page To Location    0   3000
+#   Sleep       3s
+#   Click Element  name:Your name
+
+
