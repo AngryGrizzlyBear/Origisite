@@ -123,14 +123,17 @@ Fourth Test: Check Footer Links
     Sleep       3s
     Page should contain  © 2018 ORIGINATE, INC.
 
-# This is currently being commented out due to the nature of how the Originate Website works.
-# The Website does not use <id>'s, which is a problem. This complicates being able to automate input textfields
-# and selecting text fields. Below is a sample of what I tried to do.
-#   Test: Input Field Test
-#   Click Link  xpath://a[text()='Services']
-#   Sleep       2s
-#   Scroll Page To Location    0   3000
-#   Sleep       3s
-#   Click Element  name:Your name
+
+Fifth Test: Input Field Test
+   Click Link  xpath://a[text()='Services']
+   Sleep       2s
+   Scroll Page To Location    0   3000
+   Sleep       3s
+   Input Text  css:input.src-components-shared-input----index-module---input---2kThL  Test
+   Sleep       3s
+   Input Text  css:input.src-components-shared-input----index-module---input---2kThL:nth-of-type(2)  test@test.com
+   sleep        3s
+   Input Text  css:input.src-components-shared-input----index-module---input---2kThL:nth-of-type(3)  I eat too much.
+   sleep        3s
 
 
